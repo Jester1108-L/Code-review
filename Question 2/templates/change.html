@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+		
+		</title>
+	</head>
+	<body style="background:grey">
+		{% if change == "insert" %}
+			<form method="POST" action="http://127.0.0.1:5000/change1">
+				<p>Which table would you like to insert into:</p>
+				<input type="text" id="table" name="inTable">
+				<p>What is the product code:</p>
+				<input type="text" id="inCode" name="inCode">
+				<p>What is the product name:</p>
+				<input type="text" id="inName" name="inName">
+				<p>What is the quantity:</p>
+				<input type="text" id="inQuantity" name="inQuantity">
+				<p>What is the price:</p>
+				<input type="text" id="inPrice" name="inPrice">
+				</br>
+				</br>
+				<input type="submit" value="insert">
+			</form>
+		{% elif change == "delete"%}
+			<form method="POST" action="http://127.0.0.1:5000/change2">
+				<p>Which table would you like to delete from:</p>
+				<input type="text" id="table" name="table">
+				<p>What is the product code:</p>
+				<input type="text" id="inCode" name="inCode">
+				</br>
+				</br>
+				<input type="submit" value="delete">
+			</form>
+		{% elif change == "update" %}
+			<form method="POST" action="http://127.0.0.1:5000/change3">
+				<p>Which table would you like to update:</p>
+				<input type="text" id="table" name="table">
+				<p>What is the product code:</p>
+				<input type="text" id="inCode" name="inCode">
+				<p>What field would you like to update:</p>
+				<input type="text" id="field" name="field">
+				<p>What is the new value:</p>
+				<input type="text" id="value" name="value">
+				</br>
+				</br>
+				<input type="submit" value="update">
+			</form>
+		{% endif %}
+	</body>
+</html>

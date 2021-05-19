@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Sports4Us</title>
+		<style>
+			body{
+				text-align:center
+			}
+			div{
+				background-color:#0000FF
+			}
+		</style>
+	</head>
+	<body style="background-color:#C0C0C0">
+		<div style="height:36px;">
+			<h1>Welcome!</h1>
+		</div>
+		<div>
+			</br>
+			<form method="POST" action="http://127.0.0.1:5000/login">
+				<p>Username:</p>
+				<input type="text" id="log_username" name="log_username" value="">
+				<p>Password:</p>
+				<input type="password" id="log_password" name="log_password" value="">
+				</br>
+				</br>
+				<input type="submit" value="Login">
+			</form>
+			</br>
+			<form method="POST" action="http://127.0.0.1:5000/register">
+				<input type="submit" value="Register">
+			</form>
+			</br>
+		</div>
+	</body>
+</html>
