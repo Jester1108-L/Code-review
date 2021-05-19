@@ -1,0 +1,30 @@
+public class question3a{
+	
+		private static void main(String[] args){
+			playGame();	
+		}
+		
+		private static void display(string[][] board){
+			System.out.println("-----");
+			for(i=0; i<3; i++){
+				string temp = "|";
+				for(j=0; j<3; j++){
+					temp = temp + "|" + board[i][j];
+				}
+				temp = temp + "|";
+				System.out.println(temp);
+			}
+			System.out.println("-----");
+		}
+		
+		private static void playGame(){
+			String[][] board = new String[3][3];
+			for(i=0; i<3; i++){
+				string temp = "|";
+				for(j=0; j<3; j++){
+					board[i][j] = " ";
+				}
+			}
+			display(board)
+		}
+}
